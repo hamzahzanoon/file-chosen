@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,html {
+    background: #E3f2fd;
+    min-height: 100vh;
+}
+
+.chosen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.container {
+    height: 350px;
+    width: 450px;
+}
+
+.container .wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    border: 2px dashed #c2cdda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+} 
+
+.wrapper.active {
+    border: none;
+}
+
+.wrapper .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper .icon {
+    font-size: 100px;
+    color: #9658fe;
+    text-align: center;
+}
+
+.wrapper .text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #5b5b5b;
+    padding-top: 30px;
+}
+
+.wrapper #cancel_btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #9658fe;
+}
+
+.wrapper.active:hover #cancel_btn {
+    display: block;
+}
+
+.wrapper #cancel_btn:hover {
+    color: #e74c3c;
+}
+
+.wrapper .file_name {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 18px;
+    background: linear-gradient(135deg , #3a8ffe 0% ,#9658fe 100%);
+    display: none;
+}
+
+.wrapper.active:hover .file_name {
+    display: block;
+}
+
+.container #custom_btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    display: block;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(135deg , #3a8ffe 0% ,#9658fe 100%);
+}
